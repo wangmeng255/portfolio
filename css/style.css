@@ -391,8 +391,7 @@ header {
   50%  { -webkit-transform: translateY(-1rem); }
 }
 #topbar {
-  height: 3rem;
-  /*height: 1px;*/
+  height: 1px;
   position: -webkit-sticky;
   position: sticky;
   background: #1D2C3C; top: 0em;
