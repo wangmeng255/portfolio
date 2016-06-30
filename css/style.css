@@ -25,7 +25,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
 }
 .nav {
   margin: 0.625rem 2.5rem 0.625rem 2.5rem;
@@ -396,6 +396,7 @@ header {
   position: sticky;
   background: #1D2C3C; top: 0em;
   border-bottom: 1px solid darkblue;
+  z-index: 999;
 }
 .section-header {
   display: flex;
@@ -503,7 +504,6 @@ h4 {
 .i-was figure {
   width: 50%;
   text-align: center;
-  margin: auto 0;
 }
 .i-was div {
   padding: 0 1rem 0 0.5rem;
@@ -521,7 +521,6 @@ h4 {
 .i-am-now figure {
   width: 50%;
   text-align: center;
-  margin: auto 0;
 }
 .i-am-now img {
   max-width: 20rem;
@@ -593,5 +592,44 @@ footer p {
 .icon-flaticon a {
   color: #87add0;
 }
-
+@media only screen and (max-width: 960px), screen and (max-device-width: 960px) {
+  .i-was {
+    margin: 2rem 0 3rem;
+    display: block;
+  }
+  .i-was figure {
+    width: 100%;
+    text-align: center;
+  }
+  .i-was div {
+    padding: 0 1rem;
+    width: 100%;
+    text-align: justify;
+  }
+  .i-was img {
+    max-width: 20rem;
+    max-height: 15rem;
+  }
+  .i-am-now {
+    display: block;
+  }
+  .i-am-now figure {
+    width: 100%;
+    text-align: center;
+  }
+  .i-am-now img {
+    max-width: 20rem;
+    max-height: 15rem;
+  }
+  .i-am-now div {
+    width: 100%;
+    padding: 0 1rem;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 480px), screen and (max-device-width: 480px) {
+  .btn-hldr .main-btn {
+    display: block;
+  }
+}
 
