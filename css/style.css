@@ -45,7 +45,7 @@ header {
   color: #d7e0ed;
   text-decoration: none;
 }
-.nav a:active {
+.nav a:hover {
   color: #c8ad86;
 }
 .nav li:hover {
@@ -403,6 +403,9 @@ header {
   flex-direction: row;
   padding: 3rem 0 0 0;
 }
+#about {
+  padding-top: 2rem;
+}
 #about h2 {
   width: 8.4rem;
 }
@@ -449,9 +452,6 @@ h2 {
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
-}
-#about {
-  padding-top: 3.5rem;
 }
 #about article:first-of-type figure {
   max-width: 10rem;
