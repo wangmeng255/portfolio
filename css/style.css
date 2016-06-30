@@ -1,6 +1,6 @@
 body, html, header, nav, ul, li, 
 section, footer, div, h1, h2, h3, article,
-figure, img, p, h4 {
+figure, img, p, h4, a {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -117,8 +117,8 @@ header {
 }
 .dolphine svg {
   position: absolute;
-  width: 7rem;
-  height: 7rem;
+  max-width: 7rem;
+  max-height: 7rem;
   fill: #FFFFFF;
 }
 #dolphine1 {
@@ -390,19 +390,35 @@ header {
   0%, 50%, 100%  { -webkit-transform: translateY(0); }
   50%  { -webkit-transform: translateY(-1rem); }
 }
+#topbar {
+  height: 3rem;
+  /*height: 1px;*/
+  position: -webkit-sticky;
+  position: sticky;
+  background: #1D2C3C; top: 0em;
+  border-bottom: 1px solid darkblue;
+}
 .section-header {
   display: flex;
   flex-direction: row;
-  padding: 1.5rem 0 0 1.5rem;
+  padding: 3rem 0 0 0;
 }
 #about h2 {
-  width: 10.7rem;
+  width: 8.4rem;
 }
 #projects h2 {
-  width: 12.9rem;
+  width: 9.2rem;
 }
 #contact h2 {
-  width: 13.2rem;
+  width: 9.3rem;
+}
+h2, .my-icon {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+31,066dab+100;Web+2.0+Blue+3D+%231 */
+  background: #c5deea; /* Old browsers */
+  background: -webkit-linear-gradient(rgba(197,222,234,1) 0%, rgba(138,187,215,1) 31%, rgba(6,109,171,1) 100%);
+  background: -o-linear-gradient(rgba(197,222,234,1) 0%, rgba(138,187,215,1) 31%, rgba(6,109,171,1) 100%);
+  background: linear-gradient(rgba(197,222,234,1) 0%, rgba(138,187,215,1) 31%, rgba(6,109,171,1) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); /* IE6-9 */
 }
 h2 {
   font-size: 150%;
@@ -428,20 +444,22 @@ h2 {
   height: 2rem;
   fill: #FFFFFF;
 }
-.icon-flaticon {
-  font-family: "Times New Roman", sans-serif;
+#about, #projects, #contact {
+  max-width: 58.75rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-section {
-  width: 58.75rem;
+#about {
+  padding-top: 3.5rem;
+}
+#about article:first-of-type figure {
+  max-width: 10rem;
   margin: 0 auto;
 }
-figure {
-  width: 10rem;
-  margin: 0 auto;
-}
-img {
-  width: 10rem;
-  height: 10rem;
+#about article:first-of-type img {
+  max-width: 10rem;
+  max-height: 10rem;
   border-radius: 50%;
 }
 h3 {
@@ -451,14 +469,15 @@ h3 {
 }
 p {
   font-size: 1.2rem;
+  color: #2b405f;
 }
-#about .hi {
+#about article:first-of-type {
   max-width: 28.75rem;
   margin: 0 auto;
   margin-top: 3rem;
-  margin-bottom: 3rem
+  margin-bottom: 3rem;
 }
-#about .hi p {
+#about article:first-of-type p {
   text-align: center;
 }
 .line {
@@ -466,8 +485,8 @@ p {
   width: 100%;
 }
 .line img {
-  width: 0.75rem;
-  height: 0.75rem;
+  max-width: 0.75rem;
+  max-height: 0.75rem;
 }
 .what-i-can {
   margin: 3rem 0;
@@ -475,10 +494,105 @@ p {
 h4 {
   color: #5D90BF;
   font-size: 1.5rem;
+  text-align: center;
 }
 .i-was {
-  margin: 3rem 0 6rem;
+  margin: 2rem 0 3rem;
+  display: flex;
+  flex-direction: row;
 }
-
+.i-was figure {
+  width: 50%;
+  text-align: center;
+  margin: auto 0;
+}
+.i-was div {
+  padding: 0 1rem 0 0.5rem;
+  width: 50%;
+  text-align: justify;
+}
+.i-was img {
+  max-width: 20rem;
+  max-height: 15rem;
+}
+.i-am-now {
+  display: flex;
+  flex-direction: row;
+}
+.i-am-now figure {
+  width: 50%;
+  text-align: center;
+  margin: auto 0;
+}
+.i-am-now img {
+  max-width: 20rem;
+  max-height: 15rem;
+}
+.i-am-now div {
+  width: 50%;
+  padding: 0 0.5rem 0 1rem;
+  text-align: justify;
+}
+#contact {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+#contact p {
+  text-align: center;
+}
+.btn-hldr {
+  text-align: center;
+}
+.btn-hldr .main-btn {
+  font-size: 1.1rem;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  background: #457daf;
+  padding: .75rem 2rem .75rem 3.5rem;
+  color: #1e374d;
+  text-decoration: none;
+  margin: 2.5rem 0 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-weight: 400;
+  border: 0;
+  text-transform: uppercase;
+}
+.btn-hldr .main-btn:hover {
+    background: #4073a1;
+    border: 0;
+}
+.btn-hldr .main-btn .email {
+  position: absolute;
+  height: 1.2rem;
+  width: 1.5rem;
+  left: 11%;
+  top: 33%;
+}
+footer {
+  text-align: center;
+  background: #263A4D;
+}
+.link-me {
+  margin: 3rem 0 2rem 0;
+}
+.link-me a {
+  margin: 0 4rem 0 4rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #cdddeb;
+}
+footer p {
+  color: #cdddeb;
+}
+.icon-flaticon {
+  color: #4073a1;
+  font-family: "Times New Roman", sans-serif;
+}
+.icon-flaticon a {
+  color: #87add0;
+}
 
 
