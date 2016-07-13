@@ -574,16 +574,29 @@ footer {
   background: #263A4D;
 }
 .link-me {
+  height: 3.5rem;
   margin: 3rem 0 2rem 0;
 }
 .link-me a {
+  height: 3.5rem;
+  display: inline-block;
   margin: 0 4rem 0 4rem;
   text-decoration: none;
-  font-size: 1.5rem;
   color: #cdddeb;
+}
+svg.icon {
+  fill: #cdddeb;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 footer p {
   color: #cdddeb;
+}
+footer p svg {
+  transform: translateY(0.2rem);
+  fill: #cdddeb;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 .icon-flaticon {
   color: #4073a1;
