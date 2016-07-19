@@ -49,10 +49,10 @@ header {
   height: 1.5rem;
 }
 .nav a:hover {
-  color: #c8ad86;
+  color: #ffe8a4;
 }
 .nav a:hover svg path {
-  fill: #c8ad86;
+  fill: #ffe8a4;
 }
 .helm, .boat, .bottle {
   width: 1.2rem;
@@ -81,7 +81,7 @@ header {
   margin-top: 9.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  text-shadow: 2px 2px 2px #ffc107;
+  text-shadow: 2.5px 2px 2px #ffc107;
 }
 .cloud svg:first-child {
   position: absolute;
@@ -604,7 +604,7 @@ h4 {
   position: relative;
   background: #457daf;
   padding: .75rem 2rem .75rem 3.5rem;
-  color: #1e374d;
+  color: #f2f5f9;
   text-decoration: none;
   margin: 2.5rem 0 0;
   border-radius: 3px;
@@ -615,15 +615,16 @@ h4 {
   text-transform: uppercase;
 }
 .btn-hldr .main-btn:hover {
-    background: #4073a1;
-    border: 0;
+  background: #4073a1;
+  border: 0;
 }
 .btn-hldr .main-btn .email {
   position: absolute;
-  height: 1.2rem;
-  width: 1.5rem;
+  height: 1.4rem;
+  width: 1.7rem;
   left: 11%;
   top: 33%;
+  transform: translateY(-0.22rem);
 }
 footer {
   text-align: center;
