@@ -699,6 +699,10 @@ footer p svg {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
   }
+  #projects li {
+    margin: 1.2rem;
+    width: 43%;
+  }
   .i-was {
     margin: 2rem 0 3rem;
     display: block;
