@@ -545,7 +545,7 @@ h4 {
 }
 #projects li {
   margin: 0.5rem;
-  width: 23%;
+  width: 31.5%;
 }
 #projects li a {
   height: 15.5625rem;
@@ -568,14 +568,14 @@ h4 {
   fill: #ffffff;
 }
 #projects li h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
   text-align: left;
   margin: 0;
 }
 #projects li p {
-  line-height: 1.2rem;
+  line-height: 1.3rem;
 }
 #projects li svg {
   position: absolute;
