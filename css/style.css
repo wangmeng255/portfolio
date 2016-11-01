@@ -741,5 +741,13 @@ footer p svg {
   .btn-hldr .main-btn {
     display: block;
   }
+  .btn-hldr .main-btn .email {
+    height: 2.4rem;
+    width: 2.7rem;
+    left: 25%;
+  }
+  .icon-flaticon {
+    margin: 0 5rem;
+  }
 }
 
