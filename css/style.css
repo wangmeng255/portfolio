@@ -540,12 +540,12 @@ h4 {
   width: 45%;
 }
 #projects li a {
-  height: 17.5625rem;
+  height: 18.5rem;
   text-decoration: none;
   background-color: #ffffff;
   display: block;
   position: relative;
-  padding: 7rem 1.125rem 3.5rem;
+  padding: 6rem 2rem 3.5rem;
 }
 #projects li a:hover {
   background-color: #7eb3e6;
@@ -562,13 +562,13 @@ h4 {
 #projects li h3 {
   font-size: 1.4rem;
   text-transform: uppercase;
-  padding-bottom: 0.5rem;
   text-align: left;
   margin: 0;
 }
 #projects li svg {
   position: absolute;
   top: 1.25rem;
+  left: 2rem;
   text-align: left;
   width: 4rem;
   height: 4rem;
@@ -702,11 +702,19 @@ footer p svg {
     width: 90%;
     margin: 1rem auto;
   }
+  #projects li svg {
+    width: 8rem;
+    height: 8rem;
+  }
+  #projects li a {
+    height: auto;
+    padding-top: 9.75rem;
+  }
   #projects li a h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   #projects li a p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .i-was {
     margin: 2rem 0 3rem;
@@ -740,6 +748,9 @@ footer p svg {
     width: 100%;
     padding: 0 1rem;
     text-align: justify;
+  }
+  .icon-flaticon {
+    font-size: 80%;
   }
 }
 @media only screen and (max-width: 480px), screen and (max-device-width: 480px) {
