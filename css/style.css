@@ -15,7 +15,7 @@ h1 {
   font-family: "Cinzel Decorative", cursive;
 }
 h2, h3, h4 {
-  font-family: "Dosis", sans-serif;
+  font-family: "Amiri", serif;
   margin-top: 1.25rem;
   margin-bottom: 0.625rem;
 }
@@ -33,7 +33,6 @@ header {
   text-align: right;
   background: transparent;
   text-transform: uppercase;
-  font-weight: bold;
   height: 1.5rem;
 }
 .nav li {
@@ -410,14 +409,8 @@ header {
 #about {
   padding-top: 2rem;
 }
-#about h2 {
-  width: 8.1rem;
-}
-#projects h2 {
-  width: 9.6rem;
-}
-#contact h2 {
-  width: 9.4rem;
+#about h2, #projects h2, #contact h2 {
+  padding: 0 1rem 0 2rem;
 }
 h2, .my-icon {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+31,066dab+100;Web+2.0+Blue+3D+%231 */
@@ -548,7 +541,7 @@ h4 {
   width: 45%;
 }
 #projects li a {
-  height: 15.5625rem;
+  height: 17.5625rem;
   text-decoration: none;
   background-color: #ffffff;
   display: block;
@@ -573,9 +566,6 @@ h4 {
   padding-bottom: 0.5rem;
   text-align: left;
   margin: 0;
-}
-#projects li p {
-  line-height: 1.3rem;
 }
 #projects li svg {
   position: absolute;
@@ -602,7 +592,7 @@ h4 {
   text-align: center;
   display: inline-block;
   position: relative;
-  background: #457daf;
+  background: #5d90bf;
   padding: .75rem 2rem .75rem 3.5rem;
   color: #f2f5f9;
   text-decoration: none;
@@ -615,7 +605,7 @@ h4 {
   text-transform: uppercase;
 }
 .btn-hldr .main-btn:hover {
-  background: #4073a1;
+  background: #4a7398;
   border: 0;
 }
 .btn-hldr .main-btn .email {
@@ -686,22 +676,23 @@ footer p svg {
     padding: 0 0.2rem 0 2.5rem;
     border-radius: 1.7rem;
   }
-  #about h2 {
-    width: 11rem;
-  }
-  #projects h2 {
-    width: 12.5rem;
-  }
-  #contact h2 {
-    width: 12.5rem;
+  #about h2, #projects h2, #contact h2 {
+    padding: 0 1rem 0 3rem;
   }
   #about, #projects, #contact {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
   }
   #projects li {
-    margin: 1.2rem;
-    width: 43%;
+    margin: 0 auto;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  #projects li a h3 {
+    font-size: 2rem;
+  }
+  #projects li a p {
+    font-size: 1.8rem;
   }
   .i-was {
     margin: 2rem 0 3rem;
@@ -738,6 +729,12 @@ footer p svg {
   }
 }
 @media only screen and (max-width: 480px), screen and (max-device-width: 480px) {
+#about article:first-of-type {
+  max-width: inherit;
+}
+#about article:first-of-type p {
+  text-align: inherit;
+}
   .btn-hldr .main-btn {
     display: block;
   }
