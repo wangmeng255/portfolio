@@ -537,27 +537,39 @@ h4 {
   flex-wrap: wrap;
 }
 #projects li {
+  position: relative;
   margin: 0.5rem;
   width: 45%;
-}
-#projects li a {
   height: 18.5rem;
-  text-decoration: none;
-  background-color: #ffffff;
-  display: block;
-  position: relative;
   padding: 6rem 2rem 3.5rem;
+  background-color: #fff;
 }
-#projects li a:hover {
+#projects li div {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#projects li:hover {
+  opacity: 0.6;
   background-color: #7eb3e6;
 }
-#projects li a:hover h3 {
+#projects li:hover h3 {
+  opacity: 0.6;
   color: #ffffff;
 }
-#projects li a:hover p {
+#projects li:hover p {
+  opacity: 0.6;
   color: #ffffff;
 }
-#projects li a:hover svg {
+#projects li:hover svg {
+  opacity: 0.6;
   fill: #ffffff;
 }
 #projects li h3 {
@@ -574,6 +586,26 @@ h4 {
   width: 4rem;
   height: 4rem;
   fill: #5d90bf;
+}
+#projects .link-web {
+  position: static;
+  visibility: hidden;
+  opacity: 0;
+  width: 5rem;
+  height: 5rem;
+}
+#projects .link-web:first-of-type {
+  padding-right: 0.5rem;
+}
+#projects .link-web:last-of-type {
+  padding-left: 0.5rem;
+}
+#projects li:hover .link-web {
+  visibility: visible;
+  opacity: 1;
+}
+#projects li:hover .link-web path {
+  opacity: 1;
 }
 #contact {
   margin-bottom: 5rem;
