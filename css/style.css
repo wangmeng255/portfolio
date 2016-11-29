@@ -594,11 +594,11 @@ h4 {
   width: 5rem;
   height: 5rem;
 }
-#projects .link-web:first-of-type {
-  padding-right: 0.5rem;
+#projects li a:first-of-type {
+  padding-right: 1rem;
 }
-#projects .link-web:last-of-type {
-  padding-left: 0.5rem;
+#projects li a:last-of-type {
+  padding-left: 1rem;
 }
 #projects li:hover .link-web {
   visibility: visible;
@@ -734,20 +734,22 @@ footer p svg {
     margin: 0 auto;
     width: 90%;
     margin: 1rem auto;
+    height: auto;
+    padding-top: 9.75rem;
   }
   #projects li svg {
     width: 8rem;
     height: 8rem;
   }
-  #projects li a {
-    height: auto;
-    padding-top: 9.75rem;
-  }
-  #projects li a h3 {
+  #projects li h3 {
     font-size: 2.5rem;
   }
-  #projects li a p {
+  #projects li p {
     font-size: 2rem;
+  }
+  #projects .link-web {
+    width: 10rem;
+    height: 10rem;
   }
   .i-was {
     margin: 2rem 0 3rem;
