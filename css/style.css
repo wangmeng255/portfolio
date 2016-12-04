@@ -540,7 +540,7 @@ h4 {
   position: relative;
   margin: 0.5rem;
   width: 45%;
-  height: 18.5rem;
+  height: 21rem;
   padding: 6rem 2rem 3.5rem;
   background-color: #fff;
 }
@@ -557,19 +557,19 @@ h4 {
   transform: translate(-50%, -50%);
 }
 #projects li:hover {
-  opacity: 0.6;
+  opacity: 1;
   background-color: #7eb3e6;
 }
 #projects li:hover h3 {
-  opacity: 0.6;
+  opacity: 0.3;
   color: #ffffff;
 }
 #projects li:hover p {
-  opacity: 0.6;
+  opacity: 0.3;
   color: #ffffff;
 }
 #projects li:hover svg {
-  opacity: 0.6;
+  opacity: 0.3;
   fill: #ffffff;
 }
 #projects li h3 {
